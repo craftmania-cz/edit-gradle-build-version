@@ -1,0 +1,14 @@
+name: 'Edit Gradle Build Version'
+description: 'Change the version in build.gradle from Github Action'
+author: 'MrWakeCZ'
+inputs:
+  version:
+    required: true
+    description: 'What version will be set in build.gradle'
+  gradleBuildPath:
+    required: true
+    description: 'Where is stored build.gradle'
+
+runs:
+  using: 'node12'
+  main: 'lib/index.js'
